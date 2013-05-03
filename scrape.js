@@ -67,8 +67,6 @@ function loadPage(err, body) {
   $('th').removeAttr('style')
   $('tbody').removeAttr('id')
 
-  $('div').removeAttr('class')
-
   // insert a line break before h1's
   $('h1').before('<hr />')
 
