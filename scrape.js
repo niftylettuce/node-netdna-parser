@@ -119,7 +119,7 @@ function loadPage(err, body) {
   // strip <div class="heading"> and </div>
   md = md.replace(/---\n\n<div class="heading">/g, '')
   md = md.replace(/\n\n<\/div>/g, '')
-  md = md.replace(/\n\n<div class="heading=">/g, '')
+  md = md.replace(/\n\n<div class="heading">/g, '')
 
   // remove double ---
   md = md.replace(/---\n\n---/g, '---')
