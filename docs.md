@@ -9,16 +9,22 @@ Parameter | Description |
 {report_type} | The format you want the reports summarized by - one of hourly,daily, or monthly. This value can be left blank to receive thetotals ungrouped. | 
 
 
+<div class="heading">
+
 ---
 
 # Account API
+
+</div>
 
 ## Get Account
 
 Gets account information
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/account.json</span></div>
+</div>
 
 ### Response Parameters
 
@@ -38,8 +44,10 @@ Parameter | Description | Since |
 
 Updates account information
 
+<div class="heading">
 <div class="url PUT"><span class="http_method">PUT</span>
 <span class="path">https://rws.netdna.com/{companyalias}/account.json</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -66,8 +74,10 @@ Parameter | Description | Since |
 
 Gets account address information
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/account.json/address</span></div>
+</div>
 
 ### Response Parameters
 
@@ -88,8 +98,10 @@ Parameter | Description | Since |
 
 Updates account address information
 
+<div class="heading">
 <div class="url PUT"><span class="http_method">PUT</span>
 <span class="path">https://rws.netdna.com/{companyalias}/account.json/address</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -118,16 +130,22 @@ Parameter | Description | Since |
 `date_updated` | Date Updated | 1.0 | 
 
 
+
+
 ---
 
 # Users API
+
+</div>
 
 ## List Users
 
 Returns a list of all users on the specified account
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/users.json</span></div>
+</div>
 
 ### Response Parameters
 
@@ -150,8 +168,10 @@ Parameter | Description | Since |
 
 Creates a new user on the specified account
 
+<div class="heading">
 <div class="url POST"><span class="http_method">POST</span>
 <span class="path">https://rws.netdna.com/{companyalias}/users.json</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -186,8 +206,10 @@ Parameter | Description | Since |
 
 Gets a user specified by the {user_id} parameter
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/users.json/{user_id}</span></div>
+</div>
 
 ### Response Parameters
 
@@ -205,8 +227,10 @@ Parameter | Description | Since |
 
 Updates a user specified by the {user_id} parameter
 
+<div class="heading">
 <div class="url PUT"><span class="http_method">PUT</span>
 <span class="path">https://rws.netdna.com/{companyalias}/users.json/{user_id}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -235,27 +259,37 @@ Parameter | Description | Since |
 
 Deletes a user specified by the {user_id} parameter
 
+<div class="heading">
 <div class="url DELETE"><span class="http_method">DELETE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/users.json/{user_id}</span></div>
+</div>
+
+
 
 ---
 
 # Zones API
 
+</div>
+
 ## List Zones
 
 Returns a list of all zones on the specified account
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones.json</span></div>
+</div>
 
 ## Get Zone Summary
 
 Gets a summarized count of all zone types on the specified
 account
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones.json/summary</span></div>
+</div>
 
 ### Response Parameters
 
@@ -271,8 +305,10 @@ Parameter | Description | Since |
 
 Counts all zones on the specified account
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones.json/count</span></div>
+</div>
 
 ### Response Parameters
 
@@ -281,16 +317,22 @@ Parameter | Description | Since |
 `count` | The total number of content zones for your account | 1.0 | 
 
 
+
+
 ---
 
 # Pull Zone API
+
+</div>
 
 ## List Pull Zones
 
 Returns a list of all pull zones on the specified account
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/pull.json</span></div>
+</div>
 
 ### Response Parameters
 
@@ -329,8 +371,10 @@ Parameter | Description | Since |
 
 Creates a new pull zone
 
+<div class="heading">
 <div class="url POST"><span class="http_method">POST</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/pull.json</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -398,8 +442,10 @@ Parameter | Description | Since |
 
 Counts all pull zones on the specified account
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/pull.json/count</span></div>
+</div>
 
 ### Response Parameters
 
@@ -412,8 +458,10 @@ Parameter | Description | Since |
 
 Gets a pull zone specified by the {zone_id} parameter
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/pull.json/{zone_id}</span></div>
+</div>
 
 ### Response Parameters
 
@@ -452,8 +500,10 @@ Parameter | Description | Since |
 
 Updates a pull zone specified by the {zone_id} parameter
 
+<div class="heading">
 <div class="url PUT"><span class="http_method">PUT</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/pull.json/{zone_id}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -519,29 +569,37 @@ Parameter | Description | Since |
 
 Deletes a pull zone specified by the {zone_id} parameter
 
+<div class="heading">
 <div class="url DELETE"><span class="http_method">DELETE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/pull.json/{zone_id}</span></div>
+</div>
 
 ## Enable Pull Zone
 
 Enables a pull zone specified by the {zone_id} parameter
 
+<div class="heading">
 <div class="url ENABLE"><span class="http_method">ENABLE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/pull.json/{zone_id}</span></div>
+</div>
 
 ## Disable Pull Zone
 
 Disables a pull zone specified by the {zone_id} parameter
 
+<div class="heading">
 <div class="url DISABLE"><span class="http_method">DISABLE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/pull.json/{zone_id}</span></div>
+</div>
 
 ## Purge Cache
 
 Purges pull zone cache
 
+<div class="heading">
 <div class="url DELETE"><span class="http_method">DELETE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/pull.json/{zone_id}/cache</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -550,17 +608,23 @@ Parameter | Default Value | Validation | Description | Since |
 `files` | - | An array containing relative paths of the files to purge (i.e./favicon.ico) | 1.0 | 
 
 
+
+
 ---
 
 # Pull Zone Custom Domains API
+
+</div>
 
 ## List Custom Domains
 
 Returns a list of all custom domains on the zone specified by
 {zone_id}
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/pull/{zone_id}/customdomains.json</span></div>
+</div>
 
 ### Response Parameters
 
@@ -575,8 +639,10 @@ Parameter | Description | Since |
 
 Adds a new custom domain to {zone_id}
 
+<div class="heading">
 <div class="url POST"><span class="http_method">POST</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/pull/{zone_id}/customdomains.json</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -600,8 +666,10 @@ Parameter | Description | Since |
 Gets a custom domain specified by the {zone_id} and
 {customdomain_id} parameters
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/pull/{zone_id}/customdomains.json/{customdomain_id}</span></div>
+</div>
 
 ### Response Parameters
 
@@ -616,8 +684,10 @@ Parameter | Description | Since |
 
 Updates a custom domain specified by the id parameter
 
+<div class="heading">
 <div class="url PUT"><span class="http_method">PUT</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/pull/{zone_id}/customdomains.json/{customdomain_id}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -640,19 +710,27 @@ Parameter | Description | Since |
 Deletes a custom domain specified by the {zone_id} and
 {customdomain_id} parameters
 
+<div class="heading">
 <div class="url DELETE"><span class="http_method">DELETE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/pull/{zone_id}/customdomains.json/{customdomain_id}</span></div>
+</div>
+
+
 
 ---
 
 # Push Zone API
 
+</div>
+
 ## List Push Zones
 
 Returns a list of all push zones on the specified account
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/push.json</span></div>
+</div>
 
 ### Response Parameters
 
@@ -674,8 +752,10 @@ Parameter | Description | Since |
 
 Creates a new push zone
 
+<div class="heading">
 <div class="url POST"><span class="http_method">POST</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/push.json</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -709,8 +789,10 @@ Parameter | Description | Since |
 
 Counts all push zones on the specified account
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/push.json/count</span></div>
+</div>
 
 ### Response Parameters
 
@@ -723,8 +805,10 @@ Parameter | Description | Since |
 
 Gets a push zone specified by the {zone_id} parameter
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/push.json/{zone_id}</span></div>
+</div>
 
 ### Response Parameters
 
@@ -746,8 +830,10 @@ Parameter | Description | Since |
 
 Updates a push zone specified by the {zone_id} parameter
 
+<div class="heading">
 <div class="url PUT"><span class="http_method">PUT</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/push.json/{zone_id}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -779,34 +865,46 @@ Parameter | Description | Since |
 
 Deletes a push zone specified by the {zone_id} parameter
 
+<div class="heading">
 <div class="url DELETE"><span class="http_method">DELETE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/push.json/{zone_id}</span></div>
+</div>
 
 ## Enable Push Zone
 
 Enables a push zone specified by the {zone_id} parameter
 
+<div class="heading">
 <div class="url ENABLE"><span class="http_method">ENABLE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/push.json/{zone_id}</span></div>
+</div>
 
 ## Disable Push Zone
 
 Disables a push zone specified by the {zone_id} parameter
 
+<div class="heading">
 <div class="url DISABLE"><span class="http_method">DISABLE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/push.json/{zone_id}</span></div>
+</div>
+
+
 
 ---
 
 # Push Zone Custom Domains API
+
+</div>
 
 ## List Custom Domains
 
 Returns a list of all custom domains on the zone specified by
 {zone_id}
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/push/{zone_id}/customdomains.json</span></div>
+</div>
 
 ### Response Parameters
 
@@ -821,8 +919,10 @@ Parameter | Description | Since |
 
 Adds a new custom domain to {zone_id}
 
+<div class="heading">
 <div class="url POST"><span class="http_method">POST</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/push/{zone_id}/customdomains.json</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -846,8 +946,10 @@ Parameter | Description | Since |
 Gets a custom domain specified by the {zone_id} and
 {customdomain_id} parameters
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/push/{zone_id}/customdomains.json/{customdomain_id}</span></div>
+</div>
 
 ### Response Parameters
 
@@ -862,8 +964,10 @@ Parameter | Description | Since |
 
 Updates a custom domain specified by the id parameter
 
+<div class="heading">
 <div class="url PUT"><span class="http_method">PUT</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/push/{zone_id}/customdomains.json/{customdomain_id}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -886,19 +990,27 @@ Parameter | Description | Since |
 Deletes a custom domain specified by the {zone_id} and
 {customdomain_id} parameters
 
+<div class="heading">
 <div class="url DELETE"><span class="http_method">DELETE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/push/{zone_id}/customdomains.json/{customdomain_id}</span></div>
+</div>
+
+
 
 ---
 
 # VOD Zone API
 
+</div>
+
 ## List VOD Zones
 
 Returns a list of all VOD zones on the specified account
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/vod.json</span></div>
+</div>
 
 ### Response Parameters
 
@@ -917,8 +1029,10 @@ Parameter | Description | Since |
 
 Creates a new VOD zone
 
+<div class="heading">
 <div class="url POST"><span class="http_method">POST</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/vod.json</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -947,8 +1061,10 @@ Parameter | Description | Since |
 
 Counts all vod zones on the specified account
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/vod.json/count</span></div>
+</div>
 
 ### Response Parameters
 
@@ -961,8 +1077,10 @@ Parameter | Description | Since |
 
 Gets a VOD zone specified by the {zone_id} parameter
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/vod.json/{zone_id}</span></div>
+</div>
 
 ### Response Parameters
 
@@ -981,8 +1099,10 @@ Parameter | Description | Since |
 
 Updates a VOD zone specified by the {zone_id} parameter
 
+<div class="heading">
 <div class="url PUT"><span class="http_method">PUT</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/vod.json/{zone_id}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1010,34 +1130,46 @@ Parameter | Description | Since |
 
 Deletes a VOD zone specified by the {zone_id} parameter
 
+<div class="heading">
 <div class="url DELETE"><span class="http_method">DELETE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/vod.json/{zone_id}</span></div>
+</div>
 
 ## Enable VOD Zone
 
 Enables a VOD zone specified by the {zone_id} parameter
 
+<div class="heading">
 <div class="url ENABLE"><span class="http_method">ENABLE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/vod.json/{zone_id}</span></div>
+</div>
 
 ## Disable VOD Zone
 
 Disables a VOD zone specified by the {zone_id} parameter
 
+<div class="heading">
 <div class="url DISABLE"><span class="http_method">DISABLE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/vod.json/{zone_id}</span></div>
+</div>
+
+
 
 ---
 
 # VOD Zone Custom Domains API
+
+</div>
 
 ## List Custom Domains
 
 Returns a list of all custom domains on the zone specified by
 {zone_id}
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/vod/{zone_id}/customdomains.json</span></div>
+</div>
 
 ### Response Parameters
 
@@ -1052,8 +1184,10 @@ Parameter | Description | Since |
 
 Adds a new custom domain to {zone_id}
 
+<div class="heading">
 <div class="url POST"><span class="http_method">POST</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/vod/{zone_id}/customdomains.json</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1077,8 +1211,10 @@ Parameter | Description | Since |
 Gets a custom domain specified by the {zone_id} and
 {customdomain_id} parameters
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/vod/{zone_id}/customdomains.json/{customdomain_id}</span></div>
+</div>
 
 ### Response Parameters
 
@@ -1093,8 +1229,10 @@ Parameter | Description | Since |
 
 Updates a custom domain specified by the id parameter
 
+<div class="heading">
 <div class="url PUT"><span class="http_method">PUT</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/vod/{zone_id}/customdomains.json/{customdomain_id}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1117,19 +1255,27 @@ Parameter | Description | Since |
 Deletes a custom domain specified by the {zone_id} and
 {customdomain_id} parameters
 
+<div class="heading">
 <div class="url DELETE"><span class="http_method">DELETE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/vod/{zone_id}/customdomains.json/{customdomain_id}</span></div>
+</div>
+
+
 
 ---
 
 # Live Zone API
 
+</div>
+
 ## List Live Zones
 
 Returns a list of all live zones on the specified account
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/live.json</span></div>
+</div>
 
 ### Response Parameters
 
@@ -1148,8 +1294,10 @@ Parameter | Description | Since |
 
 Creates a new live zone
 
+<div class="heading">
 <div class="url POST"><span class="http_method">POST</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/live.json</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1177,8 +1325,10 @@ Parameter | Description | Since |
 
 Counts all live zones on the specified account
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/live.json/count</span></div>
+</div>
 
 ### Response Parameters
 
@@ -1191,8 +1341,10 @@ Parameter | Description | Since |
 
 Gets a live zone specified by the {zone_id} parameter
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/live.json/{zone_id}</span></div>
+</div>
 
 ### Response Parameters
 
@@ -1211,8 +1363,10 @@ Parameter | Description | Since |
 
 Updates a live zone specified by the {zone_id} parameter
 
+<div class="heading">
 <div class="url PUT"><span class="http_method">PUT</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/live.json/{zone_id}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1240,42 +1394,56 @@ Parameter | Description | Since |
 
 Deletes a live zone specified by the {zone_id} parameter
 
+<div class="heading">
 <div class="url DELETE"><span class="http_method">DELETE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/live.json/{zone_id}</span></div>
+</div>
 
 ## Enable Live Zone
 
 Enables a live zone specified by the {zone_id} parameter
 
+<div class="heading">
 <div class="url ENABLE"><span class="http_method">ENABLE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/live.json/{zone_id}</span></div>
+</div>
 
 ## Disable Live Zone
 
 Disables a live zone specified by the {zone_id} parameter
 
+<div class="heading">
 <div class="url DISABLE"><span class="http_method">DISABLE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/live.json/{zone_id}</span></div>
+</div>
+
+
 
 ---
 
 # Zones SSL API
+
+</div>
 
 ## Get Zone's SSL Information
 
 Get the SSL certificate for the specified {zone_type} and
 {zone_id}.
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/ssl.json</span></div>
+</div>
 
 ## Install SSL on Zone
 
 Upload an SSL certificate for the specified {zone_type} and
 {zone_id}.
 
+<div class="heading">
 <div class="url POST"><span class="http_method">POST</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/ssl.json</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1304,8 +1472,10 @@ Parameter | Description | Since |
 Update the SSL certificate for the specified {zone_type} and
 {zone_id}.
 
+<div class="heading">
 <div class="url PUT"><span class="http_method">PUT</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/ssl.json</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1334,26 +1504,36 @@ Parameter | Description | Since |
 Remove the SSL certificate for the specified {zone_type} and
 {zone_id}.
 
+<div class="heading">
 <div class="url DELETE"><span class="http_method">DELETE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/ssl.json</span></div>
+</div>
+
+
 
 ---
 
 # Zones Upstream API
 
+</div>
+
 ## Get Upstream information for the current zone
 
 Get the upstream information for the specified {zone_id}.
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/upstream.json</span></div>
+</div>
 
 ## Enable Upstream on Zone
 
 Create and enable Upstream for a specific {zone_id}.
 
+<div class="heading">
 <div class="url POST"><span class="http_method">POST</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/upstream.json</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1377,8 +1557,10 @@ Parameter | Description | Since |
 
 Update the Upstream information for the specified {zone_id}.
 
+<div class="heading">
 <div class="url PUT"><span class="http_method">PUT</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/upstream.json</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1403,12 +1585,18 @@ Parameter | Description | Since |
 
 Remove the Upstream Information for the specified {zone_id}.
 
+<div class="heading">
 <div class="url DELETE"><span class="http_method">DELETE</span>
 <span class="path">https://rws.netdna.com/{companyalias}/zones/{zone_type}/{zone_id}/upstream.json</span></div>
+</div>
+
+
 
 ---
 
 # Reports by Zone API
+
+</div>
 
 ## List Zone Stats
 
@@ -1416,8 +1604,10 @@ Gets all zone usage statistics optionally broken up by
 {report_type}. If no {report_type} is given the request will return
 the total usage for the zones.
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/stats.json/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1444,8 +1634,10 @@ Gets the {zone_id} usage statistics optionally broken up by
 {report_type}. If no {report_type} is given the request will return
 the total usage for the zones.
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/{zone_id}/stats.json/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1466,16 +1658,22 @@ Parameter | Description | Since |
 `timestamp` | The timestamp for the corresponding {report_type}. | 1.0 | 
 
 
+
+
 ---
 
 # Reports by Location API
+
+</div>
 
 ## List Nodes
 
 Gets a list of all active nodes (locations)
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/nodes.json</span></div>
+</div>
 
 ### Response Parameters
 
@@ -1491,8 +1689,10 @@ Parameter | Description | Since |
 Gets a list of all active nodes (locations) specified by the
 {zone_id} parameter
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/{zone_id}/nodes.json</span></div>
+</div>
 
 ### Response Parameters
 
@@ -1509,8 +1709,10 @@ Get usage statistics broken up by nodes and optionally
 {report_type}. If no {report_type} is given the request will return
 the total usage broken up by node.
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/nodes.json/stats/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1540,8 +1742,10 @@ Get usage statistics for a particular {zone_id} broken up by
 nodes and optionally {report_type}. If no {report_type} is given
 the request will return the total usage broken up by node.
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/{zone_id}/nodes.json/stats/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1569,8 +1773,10 @@ Parameter | Description | Since |
 
 Gets the node information for the specified {node_id}
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/nodes.json/{node_id}</span></div>
+</div>
 
 ### Response Parameters
 
@@ -1586,8 +1792,10 @@ Parameter | Description | Since |
 Gets the node information for the specified {node_id} and
 {zone_id}
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/{zone_id}/nodes.json/{node_id}</span></div>
+</div>
 
 ### Response Parameters
 
@@ -1604,8 +1812,10 @@ Get usage statistics for a particular {node_id} optionally
 broken up by {report_type}. If no {report_type} is given the
 request will return the total usage for the node.
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/nodes.json/{node_id}/stats/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1632,8 +1842,10 @@ Get usage statistics for a particular {node_id} and {zone_id},
 optionally broken up by {report_type}. If no {report_type} is given
 the request will return the total usage for the node.
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/{zone_id}/nodes.json/{node_id}/stats/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1654,17 +1866,23 @@ Parameter | Description | Since |
 `timestamp` | A timestamp corresponding to {report_type}. Only returned when{report_type} is not empty. | 1.0 | 
 
 
+
+
 ---
 
 # Reports by Popular Files API
+
+</div>
 
 ## List Popular Files
 
 Gets the most popularly requested files for your account,
 grouped into daily statistics
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/popularfiles.json</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1691,8 +1909,10 @@ Parameter | Description | Since |
 Gets the most popularly requested files for your account,
 filtered by {zone_type} and grouped into daily statistics
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/{zone_type}/popularfiles.json</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1714,16 +1934,22 @@ Parameter | Description | Since |
 `timestamp` | The amount of bytes transferred | 1.0 | 
 
 
+
+
 ---
 
 # Reports by Status Codes API
+
+</div>
 
 ## List Status Code Responses
 
 Gets HTTP status code response statistics for your account
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/statuscodes.json/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1747,8 +1973,10 @@ Parameter | Description | Since |
 Gets HTTP status code response statistics for a specific
 {zone_id}
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/{zone_id}/statuscodes.json/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1772,8 +2000,10 @@ Parameter | Description | Since |
 Gets HTTP status code response statistics for a specific
 {zone_type}
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/{zone_type}/statuscodes.json/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1797,8 +2027,10 @@ Parameter | Description | Since |
 Gets HTTP status code response statistics for a specific
 {zone_type} and {zone_id}
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/{zone_type}/{zone_id}/statuscodes.json/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1817,16 +2049,22 @@ Parameter | Description | Since |
 `definition` | The definition for the status code | 1.0 | 
 
 
+
+
 ---
 
 # Reports by File Types API
+
+</div>
 
 ## List File Types
 
 Gets file type statistics for your account
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/filetypes.json/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1848,8 +2086,10 @@ Parameter | Description | Since |
 
 Gets file type statistics for a specific {zone_id}
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/{zone_id}/filetypes.json/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1871,8 +2111,10 @@ Parameter | Description | Since |
 
 Gets file type statistics for a specific {zone_type}
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/{zone_type}/filetypes.json/{report_type}</span></div>
+</div>
 
 ### Response Parameters
 
@@ -1887,8 +2129,10 @@ Parameter | Description | Since |
 Gets file type statistics for a specific {zone_type} and
 {zone_id}
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/{zone_type}/{zone_id}/filetypes.json/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1906,17 +2150,23 @@ Parameter | Description | Since |
 `hit` | The number of times a file of this type has been requested | 1.0 | 
 
 
+
+
 ---
 
 # Reports by File Size Ranges API
+
+</div>
 
 ## List File Sizes
 
 Gets request statistics for your account based on file size
 ranges
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/filesizes.json/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1945,8 +2195,10 @@ Parameter | Description | Since |
 Gets request statistics for the specified {zone_id} based on
 file size ranges
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/{zone_id}/filesizes.json/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -1975,8 +2227,10 @@ Parameter | Description | Since |
 Gets request statistics for the specified {zone_type} based on
 file size ranges
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/{zone_type}/filesizes.json/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -2005,8 +2259,10 @@ Parameter | Description | Since |
 Gets request statistics for the specified {zone_type} and
 {zone_id} based on file size ranges
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/{zone_type}/{zone_id}/filesizes.json/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -2030,17 +2286,23 @@ Parameter | Description | Since |
 `gt_100m_hits` | The number of requests for files &gt; 100MB | 1.0 | 
 
 
+
+
 ---
 
 # Reports By Directory API
+
+</div>
 
 ## List Stats By Directory
 
 Gets usage statistics by directory for your account. (This
 report has to be enabled by Sales).
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/statsbydir.json/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -2065,8 +2327,10 @@ Parameter | Description | Since |
 Gets usage statistics by directory for the specified {zone_id}.
 (This report has to be enabled by Sales).
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/{zone_id}/statsbydir.json/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -2086,16 +2350,22 @@ Parameter | Description | Since |
 `size` | The amount of bytes transferred from within this directory | 1.0 | 
 
 
+
+
 ---
 
 # Reports By File Name API
+
+</div>
 
 ## List Stats By File Name
 
 Gets usage statistics by file name for your account
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/clients/{client_id}/reports/statsbyfilename.json/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -2133,8 +2403,10 @@ Parameter | Description | Since |
 Gets usage statistics by file name for the specified
 {zone_id}
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/clients/{client_id}/reports/{zone_id}/statsbyfilename.json/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -2167,17 +2439,23 @@ Parameter | Description | Since |
 `timestampf` | Timestamp | 1.0 | 
 
 
+
+
 ---
 
 # Reports By Custom Domain API
+
+</div>
 
 ## List Stats By Directory
 
 Gets usage statistics by custom domain for your account. (This
 report has to be enabled by Sales).
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/clients/{client_id}/reports/statsbycustomdomain.json/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -2202,8 +2480,10 @@ Parameter | Description | Since |
 Gets usage statistics by custom domain for the specified
 {zone_id}. (This report has to be enabled by Sales).
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/clients/{client_id}/reports/{zone_id}/statsbycustomdomain.json/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 
@@ -2223,16 +2503,22 @@ Parameter | Description | Since |
 `size` | The amount of bytes transferred to/from this custom domain | 1.0 | 
 
 
+
+
 ---
 
 # Reports for Live Zones API
+
+</div>
 
 ## List Connection Stats
 
 Gets zone stats in hourly, daily, or monthly summaries
 
+<div class="heading">
 <div class="url GET"><span class="http_method">GET</span>
 <span class="path">https://rws.netdna.com/{companyalias}/reports/live/connectionstats.json/{report_type}</span></div>
+</div>
 
 ### Accepted Request Parameters
 

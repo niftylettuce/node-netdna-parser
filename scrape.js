@@ -78,12 +78,14 @@ function loadPage(err, body) {
     $div.replaceWith(html)
   }
 
+  /*
   $divs = $('div')
   for(var z=0; z<$divs.length; z++) {
     var $div2 = $($divs[z])
     var html2 = $div2.html()
     $div2.replaceWith(html2)
   }
+  */
 
 
   $('img').remove()
@@ -114,8 +116,12 @@ function loadPage(err, body) {
 
   md = md.split('* * *').join('---')
 
+  // strip <div class="heading"> and </div>
+  md = md.replace(/---\n\n<div class="heading">/g, '')
+  d = md.replace(/\n\n<\/div>/g, '')
+
   // remove double ---
-  md = md.replace(/---\n\n---/g, '---')
+  //md = md.replace(/---\n\n---/g, '---')
 
   md = md.replace(/<table>(?:(?:(?!<\/table>)[\s\S])*?)<\/table>/g, function(html) {
     return parseTable(html)
