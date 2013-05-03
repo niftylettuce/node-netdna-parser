@@ -124,9 +124,13 @@ function loadPage(err, body) {
   // remove double ---
   md = md.replace(/---\n\n---/g, '---')
 
+  md = md.replace(/<span class="label important">required<\/span>/g, 'required')
+
   md = md.replace(/<table>(?:(?:(?!<\/table>)[\s\S])*?)<\/table>/g, function(html) {
     return parseTable(html)
   })
+
+  md = md.replace(/\| required/g, '| <span class="label important">required</span><br />')
 
   fs.writeFileSync(path.join(__dirname, 'docs.md'), md)
 

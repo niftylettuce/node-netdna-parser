@@ -51,7 +51,7 @@ Updates account information
 
 Parameter | Default Value | Validation | Description | Since | 
 --- | --- | --- | --- | ---
-`name` | - | requiredlength: 1-30 charsThe name of your account | 1.0 | 
+`name` | - | <span class="label important">required</span><br />length: 1-30 chars | The name of your account | 1.0 | 
 
 
 ### Response Parameters
@@ -173,10 +173,10 @@ Creates a new user on the specified account
 
 Parameter | Default Value | Validation | Description | Since | 
 --- | --- | --- | --- | ---
-`email` | - | requiredlength: 6-200 chars; valid email addressEmail Address | 1.0 | 
-`password` | - | requiredlength: 5-30 charsPassword | 1.0 | 
-`firstname` | - | requiredlength: 1-32 charsFirst Name | 1.0 | 
-`lastname` | - | requiredlength: 1-32 charsLast Name | 1.0 | 
+`email` | - | <span class="label important">required</span><br />length: 6-200 chars; valid email address | Email Address | 1.0 | 
+`password` | - | <span class="label important">required</span><br />length: 5-30 chars | Password | 1.0 | 
+`firstname` | - | <span class="label important">required</span><br />length: 1-32 chars | First Name | 1.0 | 
+`lastname` | - | <span class="label important">required</span><br />length: 1-32 chars | Last Name | 1.0 | 
 `phone` | - | length: 7, 10, 11, or 14 chars; only digits considered | Phone Number | 1.0 | 
 `timezone` | - | valid::timezone | Valid timezone (see [List ofSupported Timezones](http://php.net/manual/en/timezones.php)) | 1.0 | 
 
@@ -372,8 +372,8 @@ Creates a new pull zone
 
 Parameter | Default Value | Validation | Description | Since | 
 --- | --- | --- | --- | ---
-`name` | - | requiredlength: 3-32 chars; only letters, digits, and dash (-)acceptedPull Zone Name | 1.0 | 
-`url` | - | requiredlength: 4-100 chars; only valid URLs acceptedOrigin URL | 1.0 | 
+`name` | - | <span class="label important">required</span><br />length: 3-32 chars; only letters, digits, and dash (-)accepted | Pull Zone Name | 1.0 | 
+`url` | - | <span class="label important">required</span><br />length: 4-100 chars; only valid URLs accepted | Origin URL | 1.0 | 
 `port` | 80 | length: 1-5 chars; only digits accepted | Port | 1.0 | 
 `ip` | - | length: 1-10 chars, only digits accepted | Valid IP address of the Origin URL. If omitted, the servicewill try to lookup the IP automatically. | 1.0 | 
 `compress` | 0 | only 0 or 1 accepted | On the fly compression of your files served from our edges.Enable GZip compression for the following file types: text/plain,text/html, text/javascript, text/css, text/xml,application/javascript, application/x-javascript, application/xml,text/x-component, application/json, application/xhtml+xml,application/rss+xml, application/atom+xml, app/vnd.ms-fontobject,image/svg+xml, application/x-font-ttf, font/opentype | 1.0 | 
@@ -638,7 +638,7 @@ Adds a new custom domain to {zone_id}
 
 Parameter | Default Value | Validation | Description | Since | 
 --- | --- | --- | --- | ---
-`custom_domain` | - | requiredlength: 1-255 chars, valid::custom_domain, !valid::full_domainA valid custom domain | 1.0 | 
+`custom_domain` | - | <span class="label important">required</span><br />length: 1-255 chars, valid::custom_domain, !valid::full_domain | A valid custom domain | 1.0 | 
 `type` | - | Applies only to Vod Zones and must be either 'vod-rtmp','vod-pseudo', 'vod-direct', or 'vod-ftp' | The type of custom domain being created | 1.0 | 
 
 
@@ -683,7 +683,7 @@ Updates a custom domain specified by the id parameter
 
 Parameter | Default Value | Validation | Description | Since | 
 --- | --- | --- | --- | ---
-`custom_domain` | - | requiredlength: 1-255 chars, valid::custom_domain, !valid::full_domainA new valid custom domain | 1.0 | 
+`custom_domain` | - | <span class="label important">required</span><br />length: 1-255 chars, valid::custom_domain, !valid::full_domain | A new valid custom domain | 1.0 | 
 
 
 ### Response Parameters
@@ -749,8 +749,8 @@ Creates a new push zone
 
 Parameter | Default Value | Validation | Description | Since | 
 --- | --- | --- | --- | ---
-`name` | - | requiredlength: 3-30 chars; only letters, digits, and dash (-)acceptedPush Zone name | 1.0 | 
-`password` | - | requiredlength: 5-30 chars;Push Zone FTP password | 1.0 | 
+`name` | - | <span class="label important">required</span><br />length: 3-30 chars; only letters, digits, and dash (-)accepted | Push Zone name | 1.0 | 
+`password` | - | <span class="label important">required</span><br />length: 5-30 chars; | Push Zone FTP password | 1.0 | 
 `label` | - | length: 1-255 chars | Something that describes your zone | 1.0 | 
 `valid_referers` | - | length: 1-200 chars | List of domains for http referrer protection (separated byspace). Only the domains in the list will be treated as validreferrers | 1.0 | 
 `content_disposition` | 0 | only 0 or 1 accepted | Force files to download | 1.0 | 
@@ -914,7 +914,7 @@ Adds a new custom domain to {zone_id}
 
 Parameter | Default Value | Validation | Description | Since | 
 --- | --- | --- | --- | ---
-`custom_domain` | - | requiredlength: 1-255 chars, valid::custom_domain, !valid::full_domainA valid custom domain | 1.0 | 
+`custom_domain` | - | <span class="label important">required</span><br />length: 1-255 chars, valid::custom_domain, !valid::full_domain | A valid custom domain | 1.0 | 
 `type` | - | Applies only to Vod Zones and must be either 'vod-rtmp','vod-pseudo', 'vod-direct', or 'vod-ftp' | The type of custom domain being created | 1.0 | 
 
 
@@ -959,7 +959,7 @@ Updates a custom domain specified by the id parameter
 
 Parameter | Default Value | Validation | Description | Since | 
 --- | --- | --- | --- | ---
-`custom_domain` | - | requiredlength: 1-255 chars, valid::custom_domain, !valid::full_domainA new valid custom domain | 1.0 | 
+`custom_domain` | - | <span class="label important">required</span><br />length: 1-255 chars, valid::custom_domain, !valid::full_domain | A new valid custom domain | 1.0 | 
 
 
 ### Response Parameters
@@ -1022,8 +1022,8 @@ Creates a new VOD zone
 
 Parameter | Default Value | Validation | Description | Since | 
 --- | --- | --- | --- | ---
-`name` | - | requiredlength: 3-30 chars; only letters, digits, and dash (-)acceptedVOD Zone user name | 1.0 | 
-`password` | - | requiredlength: 5-30 charsYour desired password | 1.0 | 
+`name` | - | <span class="label important">required</span><br />length: 3-30 chars; only letters, digits, and dash (-)accepted | VOD Zone user name | 1.0 | 
+`password` | - | <span class="label important">required</span><br />length: 5-30 chars | Your desired password | 1.0 | 
 `token` | - | length: 1-64 chars | The token value (shared secret) for secure streaming | 1.0 | 
 `label` | - | length: 1-255 chars | Something that describes your zone | 1.0 | 
 
@@ -1175,7 +1175,7 @@ Adds a new custom domain to {zone_id}
 
 Parameter | Default Value | Validation | Description | Since | 
 --- | --- | --- | --- | ---
-`custom_domain` | - | requiredlength: 1-255 chars, valid::custom_domain, !valid::full_domainA valid custom domain | 1.0 | 
+`custom_domain` | - | <span class="label important">required</span><br />length: 1-255 chars, valid::custom_domain, !valid::full_domain | A valid custom domain | 1.0 | 
 `type` | - | Applies only to Vod Zones and must be either 'vod-rtmp','vod-pseudo', 'vod-direct', or 'vod-ftp' | The type of custom domain being created | 1.0 | 
 
 
@@ -1220,7 +1220,7 @@ Updates a custom domain specified by the id parameter
 
 Parameter | Default Value | Validation | Description | Since | 
 --- | --- | --- | --- | ---
-`custom_domain` | - | requiredlength: 1-255 chars, valid::custom_domain, !valid::full_domainA new valid custom domain | 1.0 | 
+`custom_domain` | - | <span class="label important">required</span><br />length: 1-255 chars, valid::custom_domain, !valid::full_domain | A new valid custom domain | 1.0 | 
 
 
 ### Response Parameters
@@ -1283,7 +1283,7 @@ Creates a new live zone
 
 Parameter | Default Value | Validation | Description | Since | 
 --- | --- | --- | --- | ---
-`name` | - | requiredlength: 3-30 chars; only letters, digits, and dash (-)acceptedYour desired zone name | 1.0 | 
+`name` | - | <span class="label important">required</span><br />length: 3-30 chars; only letters, digits, and dash (-)accepted | Your desired zone name | 1.0 | 
 `password` | - | length: 5-30 chars | Your desired password | 1.0 | 
 `label` | - | length: 1-255 chars | Something that describes your zone | 1.0 | 
 
@@ -1427,8 +1427,8 @@ Upload an SSL certificate for the specified {zone_type} and
 
 Parameter | Default Value | Validation | Description | Since | 
 --- | --- | --- | --- | ---
-`ssl_crt` | - | requiredThe SSL certificate you are installing. | 1.0 | 
-`ssl_key` | - | requiredThe key for the SSL certificate you are installing. | 1.0 | 
+`ssl_crt` | - | <span class="label important">required</span><br /> | The SSL certificate you are installing. | 1.0 | 
+`ssl_key` | - | <span class="label important">required</span><br /> | The key for the SSL certificate you are installing. | 1.0 | 
 `ssl_cabundle` | - | The CA Bundle for the SSL Certificate you are installing. | 1.0 | 
 
 
@@ -1459,8 +1459,8 @@ Update the SSL certificate for the specified {zone_type} and
 
 Parameter | Default Value | Validation | Description | Since | 
 --- | --- | --- | --- | ---
-`ssl_crt` | - | requiredThe SSL certificate you are installing. | 1.0 | 
-`ssl_key` | - | requiredThe key for the SSL certificate you are installing. | 1.0 | 
+`ssl_crt` | - | <span class="label important">required</span><br /> | The SSL certificate you are installing. | 1.0 | 
+`ssl_key` | - | <span class="label important">required</span><br /> | The key for the SSL certificate you are installing. | 1.0 | 
 `ssl_cabundle` | - | The CABundle for the SSL Certificate you are installing. | 1.0 | 
 
 
@@ -1515,8 +1515,8 @@ Create and enable Upstream for a specific {zone_id}.
 
 Parameter | Default Value | Validation | Description | Since | 
 --- | --- | --- | --- | ---
-`server_url` | - | requiredThe server url or ip to provide the streaming resources | 1.0.1 | 
-`port` | - | requiredThe port where server is to be called | 1.0.1 | 
+`server_url` | - | <span class="label important">required</span><br /> | The server url or ip to provide the streaming resources | 1.0.1 | 
+`port` | - | <span class="label important">required</span><br /> | The port where server is to be called | 1.0.1 | 
 
 
 ### Response Parameters
@@ -1542,9 +1542,9 @@ Update the Upstream information for the specified {zone_id}.
 
 Parameter | Default Value | Validation | Description | Since | 
 --- | --- | --- | --- | ---
-`upstream_id` | - | requiredThe Upstream Information you're modifying. | 1.0.1 | 
-`server_url` | - | requiredThe server url or ip | 1.0.1 | 
-`port` | - | requiredThe port it uses to call the server | 1.0.1 | 
+`upstream_id` | - | <span class="label important">required</span><br /> | The Upstream Information you're modifying. | 1.0.1 | 
+`server_url` | - | <span class="label important">required</span><br /> | The server url or ip | 1.0.1 | 
+`port` | - | <span class="label important">required</span><br /> | The port it uses to call the server | 1.0.1 | 
 
 
 ### Response Parameters
