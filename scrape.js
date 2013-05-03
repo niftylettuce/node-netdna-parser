@@ -119,8 +119,6 @@ function loadPage(err, body) {
   // remove double ---
   md = md.replace(/---\n\n---/g, '---')
 
-  var tables = md.match(/<table>(?:(?:(?!<\/table>)[\s\S])*?)<\/table>/g)
-
   md = md.replace(/<table>(?:(?:(?!<\/table>)[\s\S])*?)<\/table>/g, function(html) {
     return parseTable(html)
   })
