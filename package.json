@@ -1,0 +1,21 @@
+{
+  "name": "node-netdna-parser",
+  "version": "0.0.0",
+  "private": true,
+  "description": "ERROR: No README.md file found!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "marked": "~0.2.8",
+    "cheerio": "~0.11.0",
+    "request": "~2.21.0",
+    "htmlparser2": "~3.0.5",
+    "to-markdown": "0.0.1",
+    "htmltidy": "0.0.6"
+  }
+}
