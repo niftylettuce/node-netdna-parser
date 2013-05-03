@@ -15,8 +15,6 @@ Parameter | Description |
 
 # Account API
 
-</div>
-
 ## Get Account
 
 Gets account information
@@ -135,8 +133,6 @@ Parameter | Description | Since |
 ---
 
 # Users API
-
-</div>
 
 ## List Users
 
@@ -270,8 +266,6 @@ Deletes a user specified by the {user_id} parameter
 
 # Zones API
 
-</div>
-
 ## List Zones
 
 Returns a list of all zones on the specified account
@@ -322,8 +316,6 @@ Parameter | Description | Since |
 ---
 
 # Pull Zone API
-
-</div>
 
 ## List Pull Zones
 
@@ -614,8 +606,6 @@ Parameter | Default Value | Validation | Description | Since |
 
 # Pull Zone Custom Domains API
 
-</div>
-
 ## List Custom Domains
 
 Returns a list of all custom domains on the zone specified by
@@ -720,8 +710,6 @@ Deletes a custom domain specified by the {zone_id} and
 ---
 
 # Push Zone API
-
-</div>
 
 ## List Push Zones
 
@@ -894,8 +882,6 @@ Disables a push zone specified by the {zone_id} parameter
 
 # Push Zone Custom Domains API
 
-</div>
-
 ## List Custom Domains
 
 Returns a list of all custom domains on the zone specified by
@@ -1000,8 +986,6 @@ Deletes a custom domain specified by the {zone_id} and
 ---
 
 # VOD Zone API
-
-</div>
 
 ## List VOD Zones
 
@@ -1159,8 +1143,6 @@ Disables a VOD zone specified by the {zone_id} parameter
 
 # VOD Zone Custom Domains API
 
-</div>
-
 ## List Custom Domains
 
 Returns a list of all custom domains on the zone specified by
@@ -1265,8 +1247,6 @@ Deletes a custom domain specified by the {zone_id} and
 ---
 
 # Live Zone API
-
-</div>
 
 ## List Live Zones
 
@@ -1423,8 +1403,6 @@ Disables a live zone specified by the {zone_id} parameter
 
 # Zones SSL API
 
-</div>
-
 ## Get Zone's SSL Information
 
 Get the SSL certificate for the specified {zone_type} and
@@ -1515,8 +1493,6 @@ Remove the SSL certificate for the specified {zone_type} and
 
 # Zones Upstream API
 
-</div>
-
 ## Get Upstream information for the current zone
 
 Get the upstream information for the specified {zone_id}.
@@ -1596,8 +1572,6 @@ Remove the Upstream Information for the specified {zone_id}.
 
 # Reports by Zone API
 
-</div>
-
 ## List Zone Stats
 
 Gets all zone usage statistics optionally broken up by
@@ -1663,8 +1637,6 @@ Parameter | Description | Since |
 ---
 
 # Reports by Location API
-
-</div>
 
 ## List Nodes
 
@@ -1872,8 +1844,6 @@ Parameter | Description | Since |
 
 # Reports by Popular Files API
 
-</div>
-
 ## List Popular Files
 
 Gets the most popularly requested files for your account,
@@ -1939,8 +1909,6 @@ Parameter | Description | Since |
 ---
 
 # Reports by Status Codes API
-
-</div>
 
 ## List Status Code Responses
 
@@ -2055,8 +2023,6 @@ Parameter | Description | Since |
 
 # Reports by File Types API
 
-</div>
-
 ## List File Types
 
 Gets file type statistics for your account
@@ -2155,8 +2121,6 @@ Parameter | Description | Since |
 ---
 
 # Reports by File Size Ranges API
-
-</div>
 
 ## List File Sizes
 
@@ -2292,8 +2256,6 @@ Parameter | Description | Since |
 
 # Reports By Directory API
 
-</div>
-
 ## List Stats By Directory
 
 Gets usage statistics by directory for your account. (This
@@ -2355,8 +2317,6 @@ Parameter | Description | Since |
 ---
 
 # Reports By File Name API
-
-</div>
 
 ## List Stats By File Name
 
@@ -2445,8 +2405,6 @@ Parameter | Description | Since |
 
 # Reports By Custom Domain API
 
-</div>
-
 ## List Stats By Directory
 
 Gets usage statistics by custom domain for your account. (This
@@ -2508,8 +2466,6 @@ Parameter | Description | Since |
 ---
 
 # Reports for Live Zones API
-
-</div>
 
 ## List Connection Stats
 

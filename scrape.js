@@ -118,10 +118,11 @@ function loadPage(err, body) {
 
   // strip <div class="heading"> and </div>
   md = md.replace(/---\n\n<div class="heading">/g, '')
-  d = md.replace(/\n\n<\/div>/g, '')
+  md = md.replace(/\n\n<\/div>/g, '')
+  md = md.replace(/\n\n<div class="heading=">/g, '')
 
   // remove double ---
-  //md = md.replace(/---\n\n---/g, '---')
+  md = md.replace(/---\n\n---/g, '---')
 
   md = md.replace(/<table>(?:(?:(?!<\/table>)[\s\S])*?)<\/table>/g, function(html) {
     return parseTable(html)
